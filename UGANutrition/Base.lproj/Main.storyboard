@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jx6-d9-tWj">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UGANutrition" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +19,173 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0kT-N3-xhI">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jQu-pU-A4V">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73q-fX-cVD">
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Joe Frank Harris" backgroundImage="ECV">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="mpf-EY-IXv" kind="show" identifier="Joe Frank Harris" id="Uqx-1E-lJg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1f-wE-dgt">
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Niche" backgroundImage="Niche">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="mpf-EY-IXv" kind="show" identifier="Niche" id="RdJ-JW-yZx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hp2-7R-8mc">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emX-VN-rvf">
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="O House" backgroundImage="O House">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="mpf-EY-IXv" kind="show" identifier="O House" id="gNE-An-Si3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roh-DM-W4f">
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Snelling" backgroundImage="Snelling">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="mpf-EY-IXv" kind="show" identifier="Snelling" id="cws-2R-Ggx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPU-Ls-haQ">
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Bolton" backgroundImage="Bolton">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mpf-EY-IXv" kind="show" identifier="Bolton" id="dhx-Qb-rfe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0kT-N3-xhI" secondAttribute="height" multiplier="375:523" id="gwx-AA-RDO"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning, Lakshay!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bea-bZ-xJA">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79733327509999996" green="0.072678190079999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0kT-N3-xhI" firstAttribute="top" secondItem="bea-bZ-xJA" secondAttribute="bottom" id="4kM-gl-ahP"/>
+                            <constraint firstItem="0kT-N3-xhI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6dd-Ja-iBi"/>
+                            <constraint firstItem="0kT-N3-xhI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="DK1-kp-WBw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0kT-N3-xhI" secondAttribute="bottom" id="Euh-FZ-Bda"/>
+                            <constraint firstItem="bea-bZ-xJA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GBU-i2-M2I"/>
+                            <constraint firstAttribute="trailing" secondItem="0kT-N3-xhI" secondAttribute="trailing" id="Li7-dc-h8T"/>
+                            <constraint firstItem="bea-bZ-xJA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="M74-ax-wjd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bea-bZ-xJA" secondAttribute="trailing" id="Vjv-aB-LSJ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="L2j-gy-BIu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1221.5999999999999" y="136.28185907046478"/>
+        </scene>
+        <!--Dining Hall Table View Controller-->
+        <scene sceneID="9yI-jh-mT8">
+            <objects>
+                <tableViewController id="mpf-EY-IXv" customClass="DiningHallTableViewController" customModule="UGANutrition" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="106" sectionHeaderHeight="28" sectionFooterHeight="28" id="Oy3-Bz-4AV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="106" id="u2U-JK-mjy" customClass="CategoryTableViewCell" customModule="UGANutrition" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="106"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u2U-JK-mjy" id="sIZ-BD-qEE">
+                                    <frame key="frameInset" width="342" height="105"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WzL-Ov-YEY">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="89" id="KrC-Ea-EwP"/>
+                                                <constraint firstAttribute="width" constant="89" id="XHV-mx-Ehw"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rig-1r-s7Z">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WzL-Ov-YEY" firstAttribute="top" secondItem="sIZ-BD-qEE" secondAttribute="topMargin" id="32d-7m-BAT"/>
+                                        <constraint firstItem="Rig-1r-s7Z" firstAttribute="trailing" secondItem="sIZ-BD-qEE" secondAttribute="trailingMargin" id="AKy-gc-2h6"/>
+                                        <constraint firstItem="Rig-1r-s7Z" firstAttribute="leading" secondItem="WzL-Ov-YEY" secondAttribute="trailing" constant="8" symbolic="YES" id="BrP-1O-y4F"/>
+                                        <constraint firstItem="WzL-Ov-YEY" firstAttribute="leading" secondItem="sIZ-BD-qEE" secondAttribute="leadingMargin" id="IBc-7G-9CT"/>
+                                        <constraint firstItem="WzL-Ov-YEY" firstAttribute="width" secondItem="sIZ-BD-qEE" secondAttribute="height" multiplier="7:9" constant="7.3333333333333286" id="RMi-7w-S9j"/>
+                                        <constraint firstItem="Rig-1r-s7Z" firstAttribute="bottom" secondItem="WzL-Ov-YEY" secondAttribute="bottom" id="RdO-zG-STl"/>
+                                        <constraint firstItem="WzL-Ov-YEY" firstAttribute="bottom" secondItem="sIZ-BD-qEE" secondAttribute="bottomMargin" id="bZK-6x-qL4"/>
+                                        <constraint firstItem="Rig-1r-s7Z" firstAttribute="top" secondItem="WzL-Ov-YEY" secondAttribute="top" id="s9h-77-E1V"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="picture" destination="WzL-Ov-YEY" id="2SN-U4-qlu"/>
+                                    <outlet property="title" destination="Rig-1r-s7Z" id="IX4-SC-7rr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mpf-EY-IXv" id="7MF-78-lx9"/>
+                            <outlet property="delegate" destination="mpf-EY-IXv" id="5Ur-Y9-o4Q"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iA8-vv-Q2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221.5999999999999" y="906.29685157421295"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wqp-mG-Sb1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jx6-d9-tWj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6id-SH-a68">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Jvb-Db-edI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEO-Dc-sfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bolton" width="1200" height="473"/>
+        <image name="ECV" width="822" height="1028"/>
+        <image name="Niche" width="3264" height="2448"/>
+        <image name="O House" width="1024" height="678"/>
+        <image name="Snelling" width="483" height="354"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Uqx-1E-lJg"/>
+    </inferredMetricsTieBreakers>
 </document>

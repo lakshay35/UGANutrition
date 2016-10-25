@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true;
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,6 +21,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false;
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true;
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as? DiningHallTableViewController
+        if(segue.identifier == "Bolton") {
+            destinationVC?.data = MainCategories.getData()
+            print("got exectured")        }
+    }
+    
 
 }
 
