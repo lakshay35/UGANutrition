@@ -32,8 +32,21 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as? DiningHallTableViewController
         if(segue.identifier == "Bolton") {
-            destinationVC?.data = MainCategories.getData()
-            print("got exectured")        }
+            destinationVC?.data = MainCategories.getData(id: .Bolton)
+            destinationVC?.diningHall = DiningHall.Bolton
+        } else if(segue.identifier == "Joe Frank Harris") {
+            destinationVC?.data = MainCategories.getData(id: .Summit)
+            destinationVC?.diningHall = DiningHall.Summit
+        } else if(segue.identifier == "O House") {
+            destinationVC?.data = MainCategories.getData(id: .OHouse)
+            destinationVC?.diningHall = DiningHall.OHouse
+        } else if(segue.identifier == "Niche") {
+            destinationVC?.data = MainCategories.getData(id: .Niche)
+            destinationVC?.diningHall = DiningHall.Niche
+        } else {
+            destinationVC?.data = MainCategories.getData(id: .Snelling)
+            destinationVC?.diningHall = DiningHall.Snelling
+        }
     }
     
 

@@ -1,17 +1,16 @@
 //
-//  DiningHallTableViewController.swift
+//  CategoryTableViewController.swift
 //  UGANutrition
 //
-//  Created by Lakshay Sharma on 10/22/16.
+//  Created by Lakshay Sharma on 10/28/16.
 //  Copyright © 2016 Lakshay Sharma. All rights reserved.
 //
 
 import UIKit
 
-class DiningHallTableViewController: UITableViewController {
+class CategoryTableViewController: UITableViewController {
 
-    var data = ["Hello"]
-    var diningHall: DiningHall?
+    var data = [["hello":"hello"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +41,8 @@ class DiningHallTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as! CategoryTableViewCell
-        cell.title.text = data[indexPath.row]//MainCategories.getMainCategory(index: indexPath.row)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CategoryTableViewCell
+        cell.title.text = data[indexPath.row]["serving-name"]
         cell.picture.image = UIImage(named: "question")
         return cell
     }
@@ -89,22 +88,9 @@ class DiningHallTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as? CategoryTableViewController
-        let selectedIndexPath = tableView.indexPathForSelectedRow
-        if (diningHall == DiningHall.Bolton) {
-            if let data = Bolton.getData(input: data[(selectedIndexPath?.row)!]) {
-                destinationVC?.data = data
-            }
-        } else if (diningHall == DiningHall.Niche) {
-            //code here
-        } else if (diningHall == DiningHall.OHouse) {
-            //code here
-        } else if (diningHall == DiningHall.Snelling) {
-            //code here
-        } else {
-            //code here
-        }
-        
+        let destination = segue.destination as? NutritionVC
+        let indexPath = tableView.indexPathForSelectedRow
+        destination?.product = data[indexPath!.row]
     }
     
 
