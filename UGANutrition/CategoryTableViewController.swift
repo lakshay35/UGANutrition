@@ -88,9 +88,10 @@ class CategoryTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as? NutritionVC
         let indexPath = tableView.indexPathForSelectedRow
-        destination?.product = data[indexPath!.row]
+//        let destination = segue.destination as? mealTableViewController
+        let destination = segue.destination as? MacroVCViewController
+        destination?.data = self.data[(indexPath?.row)!]
     }
     
 

@@ -7,37 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		893E72031ED9EC230029259E /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893E72001ED9EB450029259E /* Charts.framework */; };
+		893E72041ED9EC230029259E /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 893E72001ED9EB450029259E /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		896211FF1DC3D64800385F41 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896211FE1DC3D64800385F41 /* CategoryTableViewController.swift */; };
+		8973F9F61ED7785400D311B1 /* chartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8973F9F51ED7785400D311B1 /* chartTableViewCell.swift */; };
 		8984D99C1DB96B76002CCE72 /* Bolton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984D99B1DB96B76002CCE72 /* Bolton.swift */; };
 		8984D9A01DB96C50002CCE72 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984D99F1DB96C50002CCE72 /* CategoryTableViewCell.swift */; };
 		8984D9A91DB97BA2002CCE72 /* question-mark_318-52837.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8984D9A81DB97BA2002CCE72 /* question-mark_318-52837.jpg */; };
 		8984D9AB1DB97E30002CCE72 /* MainCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984D9AA1DB97E30002CCE72 /* MainCategories.swift */; };
 		8984D9AE1DB984A5002CCE72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8984D9AC1DB984A5002CCE72 /* Main.storyboard */; };
+		898C55401ED7C23100D8AC8B /* MacroVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898C553F1ED7C23100D8AC8B /* MacroVCViewController.swift */; };
 		899751D51DBC1B5200133E2F /* DiningHallTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899751D41DBC1B5200133E2F /* DiningHallTableViewController.swift */; };
+		89A6F2451ED747970075637C /* macroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A6F2441ED747970075637C /* macroTableViewCell.swift */; };
 		89CDB1AA1DAF30F000C898C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CDB1A91DAF30F000C898C4 /* AppDelegate.swift */; };
 		89CDB1AC1DAF30F000C898C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CDB1AB1DAF30F000C898C4 /* ViewController.swift */; };
 		89CDB1B11DAF30F000C898C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB1B01DAF30F000C898C4 /* Assets.xcassets */; };
 		89CDB1B41DAF30F000C898C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB1B21DAF30F000C898C4 /* LaunchScreen.storyboard */; };
-		89FA77351E15CBC40070195D /* NutritionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA77341E15CBC40070195D /* NutritionVC.swift */; };
-		89FA77371E1614E80070195D /* FullNutritionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA77361E1614E80070195D /* FullNutritionVC.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		893E71FF1ED9EB450029259E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 893E71FA1ED9EB450029259E /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		893E72011ED9EB450029259E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 893E71FA1ED9EB450029259E /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		893E72051ED9EC230029259E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 893E71FA1ED9EB450029259E /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		893E72071ED9EC230029259E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				893E72041ED9EC230029259E /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		893E71FA1ED9EB450029259E /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		896211FE1DC3D64800385F41 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		8973F9F51ED7785400D311B1 /* chartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chartTableViewCell.swift; sourceTree = "<group>"; };
 		8984D99B1DB96B76002CCE72 /* Bolton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bolton.swift; sourceTree = "<group>"; };
 		8984D99F1DB96C50002CCE72 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = ../CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		8984D9A81DB97BA2002CCE72 /* question-mark_318-52837.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "question-mark_318-52837.jpg"; sourceTree = "<group>"; };
 		8984D9AA1DB97E30002CCE72 /* MainCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCategories.swift; sourceTree = "<group>"; };
 		8984D9AD1DB984A5002CCE72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		898C553F1ED7C23100D8AC8B /* MacroVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroVCViewController.swift; sourceTree = "<group>"; };
 		899751D41DBC1B5200133E2F /* DiningHallTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningHallTableViewController.swift; sourceTree = "<group>"; };
+		89A6F2441ED747970075637C /* macroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = macroTableViewCell.swift; sourceTree = "<group>"; };
 		89CDB1A61DAF30F000C898C4 /* UGANutrition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UGANutrition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CDB1A91DAF30F000C898C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89CDB1AB1DAF30F000C898C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		89CDB1B01DAF30F000C898C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89CDB1B31DAF30F000C898C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89CDB1B51DAF30F000C898C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89FA77341E15CBC40070195D /* NutritionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionVC.swift; sourceTree = "<group>"; };
-		89FA77361E1614E80070195D /* FullNutritionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullNutritionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +88,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				893E72031ED9EC230029259E /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		893E71FB1ED9EB450029259E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				893E72001ED9EB450029259E /* Charts.framework */,
+				893E72021ED9EB450029259E /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8984D9A11DB96C5F002CCE72 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +129,9 @@
 				8984D99F1DB96C50002CCE72 /* CategoryTableViewCell.swift */,
 				896211FE1DC3D64800385F41 /* CategoryTableViewController.swift */,
 				89CDB1AB1DAF30F000C898C4 /* ViewController.swift */,
-				89FA77361E1614E80070195D /* FullNutritionVC.swift */,
-				89FA77341E15CBC40070195D /* NutritionVC.swift */,
+				89A6F2441ED747970075637C /* macroTableViewCell.swift */,
+				8973F9F51ED7785400D311B1 /* chartTableViewCell.swift */,
+				898C553F1ED7C23100D8AC8B /* MacroVCViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -85,6 +139,7 @@
 		89CDB19D1DAF30E700C898C4 = {
 			isa = PBXGroup;
 			children = (
+				893E71FA1ED9EB450029259E /* Charts.xcodeproj */,
 				89CDB1A81DAF30F000C898C4 /* UGANutrition */,
 				89CDB1A71DAF30F000C898C4 /* Products */,
 			);
@@ -122,10 +177,12 @@
 				89CDB1A21DAF30E700C898C4 /* Sources */,
 				89CDB1A31DAF30E700C898C4 /* Frameworks */,
 				89CDB1A41DAF30E700C898C4 /* Resources */,
+				893E72071ED9EC230029259E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				893E72061ED9EC230029259E /* PBXTargetDependency */,
 			);
 			name = UGANutrition;
 			productName = UGANutrition;
@@ -160,12 +217,35 @@
 			mainGroup = 89CDB19D1DAF30E700C898C4;
 			productRefGroup = 89CDB1A71DAF30F000C898C4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 893E71FB1ED9EB450029259E /* Products */;
+					ProjectRef = 893E71FA1ED9EB450029259E /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				89CDB1A51DAF30E700C898C4 /* UGANutrition */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		893E72001ED9EB450029259E /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 893E71FF1ED9EB450029259E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		893E72021ED9EB450029259E /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 893E72011ED9EB450029259E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		89CDB1A41DAF30E700C898C4 /* Resources */ = {
@@ -186,19 +266,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8973F9F61ED7785400D311B1 /* chartTableViewCell.swift in Sources */,
 				896211FF1DC3D64800385F41 /* CategoryTableViewController.swift in Sources */,
-				89FA77351E15CBC40070195D /* NutritionVC.swift in Sources */,
 				8984D9AB1DB97E30002CCE72 /* MainCategories.swift in Sources */,
+				898C55401ED7C23100D8AC8B /* MacroVCViewController.swift in Sources */,
 				89CDB1AC1DAF30F000C898C4 /* ViewController.swift in Sources */,
 				899751D51DBC1B5200133E2F /* DiningHallTableViewController.swift in Sources */,
 				8984D99C1DB96B76002CCE72 /* Bolton.swift in Sources */,
-				89FA77371E1614E80070195D /* FullNutritionVC.swift in Sources */,
+				89A6F2451ED747970075637C /* macroTableViewCell.swift in Sources */,
 				89CDB1AA1DAF30F000C898C4 /* AppDelegate.swift in Sources */,
 				8984D9A01DB96C50002CCE72 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		893E72061ED9EC230029259E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 893E72051ED9EC230029259E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8984D9AC1DB984A5002CCE72 /* Main.storyboard */ = {
@@ -317,6 +406,7 @@
 		89CDB1B91DAF30F000C898C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2625R2SZ5X;
 				INFOPLIST_FILE = UGANutrition/Info.plist;
@@ -330,6 +420,7 @@
 		89CDB1BA1DAF30F000C898C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2625R2SZ5X;
 				INFOPLIST_FILE = UGANutrition/Info.plist;
