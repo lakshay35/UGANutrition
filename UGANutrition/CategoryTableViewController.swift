@@ -41,9 +41,8 @@ class CategoryTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CategoryTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FoodItemTableViewCell
         cell.title.text = data[indexPath.row]["serving-name"]
-        cell.picture.image = UIImage(named: "question")
         return cell
     }
     

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		893E72031ED9EC230029259E /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893E72001ED9EB450029259E /* Charts.framework */; };
-		893E72041ED9EC230029259E /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 893E72001ED9EB450029259E /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4AA403E63B11F684326357A9 /* Pods_UGANutrition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA04015ABCA913732AA5A5B3 /* Pods_UGANutrition.framework */; };
+		893E72291EDA60210029259E /* FoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E72281EDA60210029259E /* FoodItemTableViewCell.swift */; };
 		896211FF1DC3D64800385F41 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896211FE1DC3D64800385F41 /* CategoryTableViewController.swift */; };
 		8973F9F61ED7785400D311B1 /* chartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8973F9F51ED7785400D311B1 /* chartTableViewCell.swift */; };
 		8984D99C1DB96B76002CCE72 /* Bolton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984D99B1DB96B76002CCE72 /* Bolton.swift */; };
@@ -25,30 +25,6 @@
 		89CDB1B41DAF30F000C898C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB1B21DAF30F000C898C4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		893E71FF1ED9EB450029259E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 893E71FA1ED9EB450029259E /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06165F241D8110E600722320;
-			remoteInfo = Charts;
-		};
-		893E72011ED9EB450029259E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 893E71FA1ED9EB450029259E /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06165F2E1D8110E600722320;
-			remoteInfo = ChartsTests;
-		};
-		893E72051ED9EC230029259E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 893E71FA1ED9EB450029259E /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 06165F231D8110E600722320;
-			remoteInfo = Charts;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		893E72071ED9EC230029259E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -56,7 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				893E72041ED9EC230029259E /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,7 +39,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		893E71FA1ED9EB450029259E /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		02371DC0F5A339FB86E761F1 /* Pods-UGANutrition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UGANutrition.release.xcconfig"; path = "Pods/Target Support Files/Pods-UGANutrition/Pods-UGANutrition.release.xcconfig"; sourceTree = "<group>"; };
+		1A102ABFE14188753AE7AB7F /* Pods-UGANutrition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UGANutrition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UGANutrition/Pods-UGANutrition.debug.xcconfig"; sourceTree = "<group>"; };
+		893E72281EDA60210029259E /* FoodItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewCell.swift; sourceTree = "<group>"; };
 		896211FE1DC3D64800385F41 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		8973F9F51ED7785400D311B1 /* chartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chartTableViewCell.swift; sourceTree = "<group>"; };
 		8984D99B1DB96B76002CCE72 /* Bolton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bolton.swift; sourceTree = "<group>"; };
@@ -81,6 +58,7 @@
 		89CDB1B01DAF30F000C898C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89CDB1B31DAF30F000C898C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89CDB1B51DAF30F000C898C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA04015ABCA913732AA5A5B3 /* Pods_UGANutrition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UGANutrition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,20 +66,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				893E72031ED9EC230029259E /* Charts.framework in Frameworks */,
+				4AA403E63B11F684326357A9 /* Pods_UGANutrition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		893E71FB1ED9EB450029259E /* Products */ = {
+		1BE3D1D58EED44DA21EB21A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				893E72001ED9EB450029259E /* Charts.framework */,
-				893E72021ED9EB450029259E /* ChartsTests.xctest */,
+				BA04015ABCA913732AA5A5B3 /* Pods_UGANutrition.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8984D9A11DB96C5F002CCE72 /* View */ = {
@@ -132,6 +109,7 @@
 				89A6F2441ED747970075637C /* macroTableViewCell.swift */,
 				8973F9F51ED7785400D311B1 /* chartTableViewCell.swift */,
 				898C553F1ED7C23100D8AC8B /* MacroVCViewController.swift */,
+				893E72281EDA60210029259E /* FoodItemTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -139,9 +117,10 @@
 		89CDB19D1DAF30E700C898C4 = {
 			isa = PBXGroup;
 			children = (
-				893E71FA1ED9EB450029259E /* Charts.xcodeproj */,
 				89CDB1A81DAF30F000C898C4 /* UGANutrition */,
 				89CDB1A71DAF30F000C898C4 /* Products */,
+				E8433C1B8C73F4EC946C7C3B /* Pods */,
+				1BE3D1D58EED44DA21EB21A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +146,15 @@
 			path = UGANutrition;
 			sourceTree = "<group>";
 		};
+		E8433C1B8C73F4EC946C7C3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A102ABFE14188753AE7AB7F /* Pods-UGANutrition.debug.xcconfig */,
+				02371DC0F5A339FB86E761F1 /* Pods-UGANutrition.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,15 +162,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89CDB1B81DAF30F000C898C4 /* Build configuration list for PBXNativeTarget "UGANutrition" */;
 			buildPhases = (
+				5549781F293699E5CAC59DE8 /* [CP] Check Pods Manifest.lock */,
 				89CDB1A21DAF30E700C898C4 /* Sources */,
 				89CDB1A31DAF30E700C898C4 /* Frameworks */,
 				89CDB1A41DAF30E700C898C4 /* Resources */,
 				893E72071ED9EC230029259E /* Embed Frameworks */,
+				D9AD1B25E2703359366B5F83 /* [CP] Embed Pods Frameworks */,
+				AC7D0D5596FA94C812506322 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				893E72061ED9EC230029259E /* PBXTargetDependency */,
 			);
 			name = UGANutrition;
 			productName = UGANutrition;
@@ -217,35 +207,12 @@
 			mainGroup = 89CDB19D1DAF30E700C898C4;
 			productRefGroup = 89CDB1A71DAF30F000C898C4 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 893E71FB1ED9EB450029259E /* Products */;
-					ProjectRef = 893E71FA1ED9EB450029259E /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				89CDB1A51DAF30E700C898C4 /* UGANutrition */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		893E72001ED9EB450029259E /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 893E71FF1ED9EB450029259E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		893E72021ED9EB450029259E /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = 893E72011ED9EB450029259E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		89CDB1A41DAF30E700C898C4 /* Resources */ = {
@@ -261,6 +228,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5549781F293699E5CAC59DE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC7D0D5596FA94C812506322 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UGANutrition/Pods-UGANutrition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9AD1B25E2703359366B5F83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UGANutrition/Pods-UGANutrition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89CDB1A21DAF30E700C898C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,6 +283,7 @@
 			files = (
 				8973F9F61ED7785400D311B1 /* chartTableViewCell.swift in Sources */,
 				896211FF1DC3D64800385F41 /* CategoryTableViewController.swift in Sources */,
+				893E72291EDA60210029259E /* FoodItemTableViewCell.swift in Sources */,
 				8984D9AB1DB97E30002CCE72 /* MainCategories.swift in Sources */,
 				898C55401ED7C23100D8AC8B /* MacroVCViewController.swift in Sources */,
 				89CDB1AC1DAF30F000C898C4 /* ViewController.swift in Sources */,
@@ -280,14 +296,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		893E72061ED9EC230029259E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = 893E72051ED9EC230029259E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8984D9AC1DB984A5002CCE72 /* Main.storyboard */ = {
@@ -405,6 +413,7 @@
 		};
 		89CDB1B91DAF30F000C898C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A102ABFE14188753AE7AB7F /* Pods-UGANutrition.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -419,6 +428,7 @@
 		};
 		89CDB1BA1DAF30F000C898C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02371DC0F5A339FB86E761F1 /* Pods-UGANutrition.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

@@ -9,8 +9,10 @@
 import UIKit
 
 class MacroVCViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+   
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var detailView: UIView!
+    @IBOutlet weak var foodRating: UILabel!
 
     var data = ["hello":"hello"]
     
@@ -19,8 +21,7 @@ class MacroVCViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         tableView.dataSource = self
         tableView.delegate = self
-        
-        detailView.backgroundColor = UIColor.red
+        foodRating.text = getRating()
         // Do any additional setup after loading the view.
     }
 
@@ -47,37 +48,84 @@ class MacroVCViewController: UIViewController, UITableViewDelegate, UITableViewD
         switch(indexPath.row) {
         case 0:
             cell.title.text = "Total Calories"
-            cell.value.text = self.data["calories"]
+            if(self.data["calories"] == " ") {
+                cell.value.text = "N/A"
+            } else {
+                cell.value.text = self.data["calories"]
+            }
         case 1:
             cell.title.text = "Calories From fat"
-            cell.value.text = self.data["calories-from-fat"]
+            if(self.data["calories-from-fat"] == " ") {
+                cell.value.text = "N/A"
+            } else {
+                cell.value.text = self.data["calories-from-fat"]
+            }
         case 2:
             cell.title.text = "Total Fat"
-            cell.value.text = self.data["total-fat"]!
+            if(self.data["total-fat"] == " ") {
+                cell.value.text = "N/A"
+            } else {
+                cell.value.text = self.data["total-fat"]
+            }
+            cell.backgroundColor = UIColor.yellow
         case 3:
             cell.title.text = "     Saturated Fat"
-            cell.value.text = self.data["sat-fat"]!
+            if(self.data["sat-fat"] == " ") {
+                cell.value.text = "N/A"
+            } else {
+                cell.value.text = self.data["sat-fat"]
+            }
         case 4:
             cell.title.text = "     Trans Fat"
-            cell.value.text = self.data["trans-fat"]!
+            if(self.data["trans-fat"] == " ") {
+                cell.value.text = "N/A"
+            } else {
+                cell.value.text = self.data["trans-fat"]
+            }
         case 5:
             cell.title.text = "Cholestrol"
-            cell.value.text = self.data["cholesterol"]!
+            if(self.data["cholesterol"] == " ") {
+                cell.value.text = "N/A"
+            } else {
+                cell.value.text = self.data["cholesterol"]
+            }
         case 6:
             cell.title.text = "Sodium"
-            cell.value.text = self.data["sodium"]!
+            if(self.data["sodium"] == " ") {
+                cell.value.text = "N/A"
+            } else {
+                cell.value.text = self.data["sodium"]
+            }
         case 7:
             cell.title.text = "Total Carbohydrate"
-            cell.value.text = self.data["total-carb"]!
+            if(self.data["total-carb"] == " ") {
+                cell.value.text = "N/A"
+            } else {
+                cell.value.text = self.data["total-carb"]
+            }
+            cell.backgroundColor = UIColor.red
         case 8:
             cell.title.text = "     Dietary Fiber"
-            cell.value.text = self.data["dietary-fiber"]!
+            if(self.data["dietary-fiber"] == " ") {
+                cell.value.text = "N/A"
+            } else {
+                cell.value.text = self.data["dietary-fiber"]
+            }
         case 9:
             cell.title.text = "     Sugars"
-            cell.value.text = self.data["sugars"]!
+            if(self.data["sugars"] == " ") {
+                cell.value.text = "N/A"
+            } else {
+                cell.value.text = self.data["sugars"]
+            }
         case 10:
             cell.title.text = "Protein"
-            cell.value.text = self.data["protein"]!
+            if(self.data["protein"] == " ") {
+                cell.value.text = "N/A"
+            } else {
+                cell.value.text = self.data["protein"]
+            }
+            cell.backgroundColor = UIColor(red: 0.0, green: 128.0, blue: 255.0, alpha: 1.0)
         default:
             cell.title.text = "N/A"
             cell.value.text = "N/A"
@@ -90,7 +138,48 @@ class MacroVCViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
 
 
+    func getDoubleFromString(value: String) -> Double {
+        var stringValue = value
+        let index = stringValue.index(stringValue.startIndex, offsetBy: stringValue.characters.count - 1)
+        stringValue = stringValue.substring(to: index)
+        return (NumberFormatter().number(from: stringValue)?.doubleValue)!
+    }
+    
+    func getIntFromString(value: String) -> Int {
+        return (NumberFormatter().number(from: value)!.intValue)
+    }
+    
+    
+    func getRating() -> String {
+        
+        var returnString = ""
+        
+        
+        let fat = getDoubleFromString(value: self.data["total-fat"]!)
+        let carb = getDoubleFromString(value: self.data["total-carb"]!)
+        let protein = getDoubleFromString(value: self.data["protein"]!)
+        let calories = getIntFromString(value: self.data["calories"]!)
+        
+        let carbRatio = (carb / (carb + fat + protein)) * 100
+        let fatRatio = (fat / (carb + fat + protein)) * 100
+        let proteinRatio = (protein / (carb + fat + protein)) * 100
+        
+        if(carbRatio >= 60 && calories > 50) {
+            returnString = "Need some energy. Eat this and become energized with all the carbohydrates in this food"
+        } else if (proteinRatio >= 50 && calories > 50) {
+            returnString = "Did you just workout? Eat this to reward all that hardwork"
+        } else if (fatRatio >= 30 && calories > 50) {
+            returnString = "This is a little high in fat but it will satiate hunger"
+        } else if (fatRatio >= 30 && calories > 50 && proteinRatio >= 30) {
+            returnString = "This will fill you up and prevent you from getting hungry"
+        } else {
+            returnString = "Try this, you might like it"
+        }
+        
+        return returnString
+    }
     /*
+     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
